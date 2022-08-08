@@ -1,23 +1,38 @@
-/* Universal Selector */
-* {
+/* Added my variables for chosen colors*/
+:root {
+  --orchid: orchid;
+  --background: whitesmoke;
+  --text:#4F4846;
+  --header:#FDF8F5;
+  --border:plum;
+}
+
+.mystory{
+  box-sizing: border-box;
     margin:0;
-    padding:0;  
+    padding:20px; 
+    width: 1000px; 
+    height: 300px;
+    border: 1px solid #4F4846;
+    text-align: center;
+
+
   }
   
-  /* Element Selectors */
+
   body {
     position: relative;
     font-family: "Goudy Bookletter 1911", sans-serif;
     font-size: 20px;
-    background-color: whitesmoke;
-    color: #4F4846;
+    background-color: var(--background);
+    color: var(--text);
   }
   
   h1,
   h2 {
     margin: 20px;
   }
-  
+
   main {
     padding: 60px 0;
   }
@@ -30,7 +45,7 @@
   
   a {
     text-decoration: none;
-    color: #FDF8F5;
+    color: var(--header);
   }
   
   header,
@@ -38,20 +53,20 @@
     height: 60px;
     width: 100%;
     line-height: 60px;
-    background-color: orchid;
+    background-color: var(--orchid);
   }
   
   header {
-    position: fixed;
-    border-bottom: 10px solid plum;
+    position: relative;
+    border-bottom: 10px solid var(--border);
   }
   
   footer {
-    position: absolute;
+    position: fixed;
     margin-top: 0;
     bottom: 0;
-    border-bottom: 10px solid #4F4846;
-    color: #FDF8F5;    
+    border-bottom: 10px solid var(--text);
+    color: var(--header);    
   }
   
   figure {
@@ -62,55 +77,29 @@
     display: block;
     margin: 20px auto;
     border-radius: 50%;
-    max-height: 500px;
+    max-height: 150px;
   }
   
   section {
     margin-bottom: 0;
     padding: 20px 10px 40px 10px;
-    border-top: 3px solid gray;
-    background-color: whitesmoke;
+    border-top: 3px solid var(--text);
+    background-color: var(--background);
   }
   
-  form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 500px;
-    padding: 10px;
-    border: 5px solid plum;
-    border-radius: 20px;
-  }
   
   label {
     display: inline-block;
     width: 100px;
   }
     
-  input, 
-  textarea {
-    box-sizing: border-box;
-    width: 300px;
-    border: 1px solid #4F4846;
-  }
   
-  textarea {
-    vertical-align: top;
-    height: 60px;
-  }
-    
-  button {
-    height: 40px;
-    width: 120px;
-    background-color: #4F4846;
-    color: #FDF8F5;
-  }
-   
-  /* Class Selectors */
   .text-center {
     text-align: center;
   }
   
-  .text-right {
-    text-align: right;
+  .header {
+    text-align: center;
   }
+  
   
