@@ -7,21 +7,20 @@
   --border:plum;
 }
 
-.mystory{
+* {
   box-sizing: border-box;
-    margin:auto;
-    padding:20px; 
-    width: 100%; 
-    height: 300px;
-    border: 1px solid #4F4846;
-    text-align: center;
-    border-spacing: 10px;
+  padding: 0;
+  margin: 0;
+}
 
+.header {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--border);
+  color: var(--header);
+  text-align: center;
+}
 
-  }
-  
-
-  body {
+body {
     position: relative;
     font-family: "Goudy Bookletter 1911", sans-serif;
     font-size: 20px;
@@ -43,36 +42,35 @@
     padding: 0px 20px;
     text-decoration: none;
   }
-  
-  a {
-    text-decoration: none;
+  a{
     color: var(--header);
+    text-decoration: none
   }
+
   
   header,
   footer {
     height: 60px;
     width: 100%;
     line-height: 60px;
-    background-color: var(--orchid);
+    background-color: var(--border);
   }
   
   header {
     position: relative;
-    border-bottom: 10px solid var(--border);
+
   }
   
-  footer {
+  .footer {
     position: relative;
     margin-top: 0;
     bottom: 0;
-    border-bottom: 10px solid var(--text);
-    color: var(--header);    
+    color: var(--header);  
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;  
   }
   
-  figure {
-    margin-bottom: 40px;
-  }
   
   img {
     display: block;
@@ -83,21 +81,52 @@
   
     
   }
-
-  
-  
-  label {
-    display: inline-block;
-    width: 100px;
-  }
     
+
+
+
+
+p {
+    font-size: 20px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 100%;
+    display: inline-block;
+    margin-left: 20px;
   
-  .text-center {
-    text-align: center;
-  }
+}
+
+
+/*In this section is where I left only this class and delted the other 2 that were present.*/
+.boxes {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text);
+    width: 97%;
+    border-style: solid;
+    border-color: goldenrod;
   
-  .header {
-    text-align: center;
-  }
-  
-  
+}
+/*This is the section that I continued to delete the other 2 class images to keep only this one for all images*/
+.boxes img {
+    max-height: 200px;
+}
+/*Same thing in this area, to make all the h2 classes consolidated*/
+.boxes h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
