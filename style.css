@@ -28,7 +28,6 @@ body {
     color: var(--text);
   }
   
-  h1,
   h2 {
     margin: 20px;
   }
@@ -82,10 +81,6 @@ body {
     
   }
     
-
-
-
-
 p {
     font-size: 20px;
 }
@@ -108,7 +103,7 @@ p {
 }
 
 
-/*In this section is where I left only this class and delted the other 2 that were present.*/
+/*This controls the styling of my boxes*/
 .boxes {
     margin-bottom: 20px;
     padding: 50px;
@@ -120,11 +115,11 @@ p {
     border-color: goldenrod;
   
 }
-/*This is the section that I continued to delete the other 2 class images to keep only this one for all images*/
+
 .boxes img {
     max-height: 200px;
 }
-/*Same thing in this area, to make all the h2 classes consolidated*/
+
 .boxes h2 {
     margin-bottom: 20px;
     font-size: 36px;
