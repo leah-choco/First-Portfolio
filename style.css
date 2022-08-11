@@ -1,6 +1,6 @@
 /* Added my variables for chosen colors*/
 :root {
-  --orchid: orchid;
+  --boxes: goldenrod;
   --background: whitesmoke;
   --text:#4F4846;
   --header:#FDF8F5;
@@ -19,8 +19,11 @@
   color: var(--header);
   text-align: center;
   position: relative;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
 }
-
+/*Experimenting with this aspect of CSS rather than making classes and ids for everything.*/
 body {
   position: relative;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -43,47 +46,53 @@ body {
     padding: 0px 20px;
     text-decoration: none;
   }
+  
   a{
-    color: var(--header);
+    color:var(--header);
     text-decoration: none
   }
 
-  
-  header,
-  footer {
-    height: 60px;
-    width: 100%;
-    line-height: 60px;
-    background-color: var(--border);
-  }
-  
 
-  
+/*This section controls my Portfolio box.*/  
   .grid-container {
     display: grid;
-    /* grid-template-columns:300px auto 300px; */
-    grid-template-columns: 200px auto 320px 320px;
+    grid-template-columns: 175px auto 320px 320px;
     background-color: var(--);
     border-style: solid;
-    border-color: goldenrod;
+    border-color: var(--boxes);
     height: 300px;
     width: 97%;
     margin-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--background);
-    gap: 80x  30px;
-
-
+    gap: 80px  30px;
   }
   
-  .grid-item{
-    background-color: var(--background);
-    border: 1px solid goldenrod;
+  .grid-item1{
+    background-image: url("Github Challenge 2.webp");
+    border: 1px solid var(--boxes);
     padding: 30px;
     font-size: 30px;
     text-align: center;
-
+    background-size: 500px ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--header);
   }
+
+  .grid-item2{
+    background-image: url("coming soon.jpeg");
+    border: 1px solid var(--boxes);
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+  }
+
   .footer {
     position: relative;
     margin-top: 0;
@@ -92,6 +101,11 @@ body {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;  
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: var(--border);
+
   }
   
   img {
@@ -113,7 +127,7 @@ body {
   }
 
 p {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .float-left {
@@ -133,13 +147,6 @@ p {
   
 }
 
-.Name{
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: var(--text)
-}
-
-
 /*This controls the styling of my boxes*/
 .boxes {
     margin-bottom: 20px;
@@ -150,7 +157,7 @@ p {
     color: var(--text);
     width: 97%;
     border-style: solid;
-    border-color: goldenrod;
+    border-color: var(--boxes);
     text-align: center;
   
 }
@@ -163,10 +170,23 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-@media  screen and (max-width: 1080px)  {
+/*Attempting to make it more responsive. I will need to work on this skill.*/
+@media screen and (max-width: 1080px){
   p {
     font-size: 20px;
   
+  }
+}
+
+@media screen and (max-width: 789px) {
+  p{
+    font-size:10px;
+  }
+  
+}
+
+@media screen and (max-width:400px) {
+  p{
+    font-size: 8px
   }
 }
