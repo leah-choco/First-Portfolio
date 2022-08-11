@@ -1,5 +1,6 @@
 # First-Portfolio
 This was my first exercise in using CSS and HTML together to form a web app.
+Deployed Application:  https://leah-choco.github.io/First-Portfolio/
 
 ## The Goal of This Project
 The goal of this application is to have a place for people to check out to get to know me, my work, and have my contact information. 
