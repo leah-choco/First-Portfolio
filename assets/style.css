@@ -69,7 +69,7 @@ body {
   }
   
   .grid-item1{
-    background-image: url("Github Challenge 2.webp");
+    background-image: url("./GitHub\ Challenge\ 2.webp");
     border: 1px solid var(--boxes);
     padding: 30px;
     font-size: 30px;
@@ -81,7 +81,7 @@ body {
   }
 
   .grid-item2{
-    background-image: url("coming soon.jpeg");
+    background-image: url("./coming\ soon.jpeg");
     border: 1px solid var(--boxes);
     padding: 30px;
     font-size: 30px;
