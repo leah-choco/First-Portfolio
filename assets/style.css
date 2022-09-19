@@ -81,9 +81,9 @@ body {
   }
 
   .grid-item2{
-    background-image: url("./coming\ soon.jpeg");
+    background-image: url("./pexels-henry-&-co-2341290.jpg");
     border: 1px solid var(--boxes);
-    padding: 30px;
+    padding: 80px;
     font-size: 30px;
     text-align: center;
     background-size: contain;
@@ -93,6 +93,17 @@ body {
     
   }
 
+  .grid-item3{
+    background-image: url("./coming\ soon.jpeg");
+    border: 1px solid var(--boxes);
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
   .footer {
     position: relative;
     margin-top: 0;
